@@ -4,7 +4,7 @@
 
 .PHONY:all
 all:
-	g++ -o oj.exe -DOJ_6 mooc_oj.cc -lstdc++
+	g++ -o oj.exe -DOJ_2_12 mooc_oj.cc -lstdc++
 	
 clean:
 	rm -f *.exe
