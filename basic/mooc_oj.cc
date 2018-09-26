@@ -324,3 +324,112 @@ int main()
     return 0;
 }
 #endif
+
+#ifdef OJ_3_1
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int i;
+	cin >> i;
+	if (i%2) cout << "odd" << endl;
+	else cout << "even" <<endl;
+}
+
+#endif
+
+#ifdef OJ_3_2
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string f;
+	cin >> f;
+	int flag = 0;
+	flag = f.find('.',0);
+	float tmp = atof(f.c_str());
+	
+	if (flag != string::npos)
+	{
+		if (tmp > 0)
+			cout << "positive real" << endl;
+		else if (tmp < 0)
+			cout << "negative real" << endl;
+		else
+			cout << "zero" << endl;
+	}
+	else
+	{
+		if (tmp == 0)
+			cout << "zero" << endl;
+		else if (tmp > 0)
+			cout << "positive integer" << endl;
+		else
+			cout << "negative integer" << endl;
+	}
+	
+	return 0;
+}
+
+#endif
+
+#ifdef OJ_3_3
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	float x, y;
+	cin >> x >> y;
+	if (x>0 && y>0)
+		cout << "1" << endl;
+	else if (x<0 && y>0)
+		cout << "2" << endl;
+	else if (x<0 && y<0)
+		cout << "3" << endl;
+	else
+		cout << "4" << endl;
+	
+	return 0;
+}
+
+#endif
+
+#ifdef OJ_3_5
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int x;
+	cin >> x;
+	if (x>=90 && x<=100)
+		cout << "5" << endl;
+	else if (x>=80 && x<=89)
+		cout << "4" << endl;
+	else if (x>=70 && x<=79)
+		cout << "3" << endl;
+	else if (x>=60 && x<=69)
+		cout << "2" << endl;
+	else if (x>=10 && x<=59)
+		cout << "1" << endl;
+	else
+		cout << "0" << endl;
+	
+	return 0;
+}
+
+#endif
